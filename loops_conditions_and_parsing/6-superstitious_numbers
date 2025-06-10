@@ -3,14 +3,19 @@
 n=1
 while [ $n -le 20 ];
 do
-	if [ $n -eq 4 ]; then
+	case $n in 
+	4)
 		echo -e "$n\nbad luck from China"
-	elif [ $n -eq 9 ]; then
+		;;
+	9)
 		echo -e "$n\nbad luck from Japan"
-	elif [ $n -eq 17 ]; then
+		;;
+	17)
 		echo -e "17\nbad luck from Italy"
-	else 
+		;;
+	*)
 		echo "$n"
-	fi
+		;;
+	esac
 	((n++))
 done
