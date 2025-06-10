@@ -6,7 +6,7 @@ do
 	if [ $n -eq 8 ] ; then 
 		echo -e "Best School\nHi"
 	else
-		echo "Best school"
+		echo "Best School"
 	fi
 	((n++))
 done
