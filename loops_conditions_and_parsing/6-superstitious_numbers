@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Comment
+n=1
+while [ $n -le 20 ];
+do
+	if [ $n -eq 4 ]; then
+		echo -e "$n\nbad luck from China"
+	elif [ $n -eq 9 ]; then
+		echo -e "$n\nbad luck from Japan"
+	elif [ $n -eq 17 ]; then
+		echo -e "17\nbad luck from Italy"
+	else 
+		echo "$n"
+	fi
+	((n++))
+done
